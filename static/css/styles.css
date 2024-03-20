@@ -1,0 +1,102 @@
+/* Default theme (light mode) */
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+   }
+   
+   .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background: hsl(29, 82%, 52%);
+    margin-bottom: 5%;
+    border-radius: 25px;
+    padding: 2%;
+    overflow: auto;
+    resize: both;
+    text-overflow: ellipsis;
+   }
+   
+   .card:hover {
+    background: rgb(240, 117, 17);
+   }
+   
+   .submit_form {
+    text-align: center;
+    padding: 3%;
+    background: #c57906;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.06);
+   }
+   
+   /* Dark mode */
+   body.dark-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+   }
+   
+   .card.dark-mode {
+    background: #495057;
+   }
+   
+   .card.dark-mode:hover {
+    background: #6c757d;
+   }
+   
+   .submit_form.dark-mode {
+    background: #343a40;
+   }
+
+   /* Default theme (light mode) */
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+.add-task-page {
+    background-color: hwb(32 13% 5%); /* Customize the background color of the add task page */
+}
+
+.add-task-form {
+    /* Customize the form styles here */
+}
+
+.add-task-button {
+    /* Customize the button styles here */
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+}
+
+body.dark-mode .add-task-page {
+    background-color: #495057;
+}
+
+body.dark-mode .add-task-form {
+    /* Customize the form styles for dark mode here */
+}
+
+body.dark-mode .add-task-button {
+    /* Customize the button styles for dark mode here */
+}
+
+/* Other styles... */     
+
+/* Position the dark mode toggle button on the right side of the screen */
+.theme-switcher {
+    position: fixed;
+    top: 10px; /* Adjust as needed */
+    right: 10px; /* Adjust as needed */
+    z-index: 1000; /* Ensure it's above other elements */
+}
+
+/* Style the dark mode toggle button */
+#theme-switcher {
+    background: none;
+    border: none;
+    color: #212529; /* Adjust color as needed */
+    cursor: pointer;
+}
+
+/* Other styles... */

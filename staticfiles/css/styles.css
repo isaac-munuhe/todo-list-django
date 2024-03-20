@@ -1,0 +1,46 @@
+/* Default theme (light mode) */
+body {
+    background-color: #f8f9fa;
+    color: #212529;
+   }
+   
+   .card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    background: #ffffff;
+    margin-bottom: 5%;
+    border-radius: 25px;
+    padding: 2%;
+    overflow: auto;
+    resize: both;
+    text-overflow: ellipsis;
+   }
+   
+   .card:hover {
+    background: #e9ecef;
+   }
+   
+   .submit_form {
+    text-align: center;
+    padding: 3%;
+    background: #f8f9fa;
+    border-radius: 25px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1), 0 6px 20px 0 rgba(0,0,0,0.06);
+   }
+   
+   /* Dark mode */
+   body.dark-mode {
+    background-color: #343a40;
+    color: #f8f9fa;
+   }
+   
+   .card.dark-mode {
+    background: #495057;
+   }
+   
+   .card.dark-mode:hover {
+    background: #6c757d;
+   }
+   
+   .submit_form.dark-mode {
+    background: #343a40;
+   }

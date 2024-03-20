@@ -1,0 +1,21 @@
+<!-- templates/todo/add_task.html -->
+
+{% extends 'todo/base.html' %}
+
+{% block title %}
+Add a New Task
+{% endblock %}
+
+{% block content %}
+<div class="container add-task-page">
+    <h2>Add a New Task</h2>
+    <form method="POST" class="add-task-form">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <div class="form-actions">
+            <button type="submit" class="btn btn-primary add-task-button">Add Task</button>
+            <a href="{% url 'todo' %}" class="btn btn-secondary cancel-button">Cancel</a>
+        </div>
+    </form>
+</div>
+{% endblock %}

@@ -1,0 +1,46 @@
+<!-- templates/todo/base.html -->
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Todo List{% endblock %}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="{% static 'js/theme-switcher.js' %}"></script>
+</head>
+<body>
+    <header>
+        <!-- Your header content -->
+    </header>
+
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <footer>
+        <!-- Your footer content -->
+    </footer>
+
+    <!-- Dark mode toggle button -->
+    <div class="theme-switcher">
+        <button id="theme-switcher" class="btn btn-default">
+            <i class="glyphicon glyphicon-adjust"></i>
+        </button>
+    </div>
+
+    <!-- Voice Recognition Button -->
+    <button id="start-voice-recognition" class="btn btn-default">
+        Start Voice Recognition
+    </button>
+
+    <!-- Include the voice recognition script -->
+    <script src="{% static 'js/voice_recognition.js' %}"></script>
+</body>
+</html>
